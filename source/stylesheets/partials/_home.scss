@@ -1,0 +1,139 @@
+section {
+  @include outer-container;
+  margin-top: em(40);
+  .hero {
+    $hero-background-top: darken($base-accent-color, 25); 
+    $hero-background-bottom: adjust-hue($hero-background-top, -70);
+    $hero-color: white;
+    $gradient-angle: 10deg;
+    $hero-image: '/images/cinema-2.jpg'; 
+
+    background-image: url($hero-image);
+    background-color: white;
+    opacity: 0.9; 
+    filter: alpha(opacity=90);
+
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    padding-bottom: 2em;
+
+
+    @include media($medium-screen) {
+      @include span-columns(8);
+    }
+
+
+    .hero-inner {
+      @include outer-container;
+      @include clearfix;
+      padding: 3em;
+      padding-bottom: 1em;
+      margin: auto;
+      text-align: center;
+      color: $hero-color;
+
+      button {
+        @include button(simple, $base-background-color);
+        font-size: $base-font-size;
+        outline: none;
+      }
+
+      .hero-copy {
+        text-align: center;
+
+        h1 {
+          font-size: 1.6em;
+          margin-bottom: .5em;
+
+          @include media($large-screen) {
+            font-size: 1.8em;
+          }
+        }
+
+        p {
+          font-family: $serif;
+          color: #eae5e0;
+          margin: auto;
+          margin-bottom: 3em; 
+          font-weight: 500;
+          line-height: 1.4em;
+
+          @include media($large-screen) {
+            text-align: left;
+            font-size: 1.3em;
+            //max-width: 40%;
+          }
+        }
+      }
+    }
+  }
+
+  .news {
+    position: relative;
+    background-color: white;
+    box-shadow: 0 1px 4px 1px $light-gray;
+    @include media($medium-screen) {
+      @include span-columns(4);
+      @include omega();
+    }
+
+    .news-inner {
+      padding: .75em 1em;
+      margin-bottom: em(40);
+      h2 {
+        text-align: center;
+      }
+    }
+
+    .all {
+      text-align: right;
+      margin-right: em(20);
+      @include media($medium-screen) {
+        position: absolute;
+        right: em(20);
+        bottom: 0px;
+      }
+    }
+  }
+
+  .activities {
+    margin-top: em(40);
+    padding: 3em; 
+    background-color: white;
+    box-shadow: 0 1px 4px 1px $light-gray;
+    @include media($medium-screen) {
+      @include span-columns(8);
+    }
+
+    .activity {
+      margin-top: em(20);
+      padding: 1em;
+      padding-left: 0px;
+      clear: both;
+      img {
+        float: right;
+      }
+      p {
+        float: left;
+      }
+    }
+  }
+
+  .partners {
+    margin-top: em(40);
+    background-color: white;
+    box-shadow: 0 1px 4px 1px $light-gray;
+    @include media($medium-screen) {
+      @include span-columns(4);
+      @include omega();
+    }
+    .partners-inner {
+      padding: .75em 1em;
+      margin-bottom: em(40);
+      h2 {
+        text-align: center;
+      }
+    }
+  }
+}

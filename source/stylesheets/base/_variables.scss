@@ -1,6 +1,6 @@
 // Typography
-$sans-serif: $helvetica;
-$serif: $georgia;
+$sans-serif: 'Roboto', $helvetica;
+$serif: 'Source Sans Pro', $georgia;
 $base-font-family: $sans-serif;
 $header-font-family: $base-font-family;
 
@@ -21,7 +21,7 @@ $light-yellow: #FFF6BF;
 $light-green: #E6EFC2;
 
 // Background Color
-$base-background-color: white;
+$base-background-color: #eae5e0;
 
 // Font Colors
 $base-font-color: $dark-gray;
