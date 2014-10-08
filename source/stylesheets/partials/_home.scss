@@ -80,9 +80,14 @@ section {
 
     .news-inner {
       padding: .75em 1em;
+      padding-left: 2em;
       margin-bottom: em(40);
       h2 {
         text-align: center;
+        margin-bottom: em(10);
+      }
+      .date {
+        font-style: italic;
       }
     }
 
@@ -100,6 +105,7 @@ section {
   .activities {
     margin-top: em(40);
     padding: 3em; 
+    padding-top: 1.75em;
     background-color: white;
     box-shadow: 0 1px 4px 1px $light-gray;
     @include media($medium-screen) {
@@ -107,7 +113,9 @@ section {
     }
 
     .activity {
+      @include clearfix;
       margin-top: em(20);
+      margin-bottom: em(20);
       padding: 1em;
       padding-left: 0px;
       clear: both;
@@ -128,12 +136,17 @@ section {
       @include span-columns(4);
       @include omega();
     }
-    .partners-inner {
+
+    h2 {
+      text-align: center;
+      margin-bottom: em(10);
+      padding-top: .75em;
+    }
+
+    .partner {
       padding: .75em 1em;
+      padding-left: 2em;
       margin-bottom: em(40);
-      h2 {
-        text-align: center;
-      }
     }
   }
 }
