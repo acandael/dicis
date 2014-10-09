@@ -1,0 +1,16 @@
+article {
+  .breadcrumb {
+    margin-bottom: em(40);
+  }
+  .practical {
+    float: left;
+  }
+  .content {
+    float: left;
+    @include span-columns(8);
+    margin-top: em(20);
+  }
+  aside {
+    float: right;
+  }
+}
