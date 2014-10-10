@@ -1,0 +1,19 @@
+article.news-item {
+
+  header {
+    margin-bottom: $base-line-height;
+  }
+
+  h2 {
+    font-size: $base-font-size * 1.2;
+  }
+  footer {
+    float: left;
+    font-style: italic;
+  }
+
+  .content {
+    float: left;
+    clear: left;
+  }
+}
