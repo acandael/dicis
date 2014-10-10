@@ -11,8 +11,8 @@ article.introduction {
 .accordion-tabs {
   @include outer-container;
   .tab-content {
-    //@include span-columns(12);
     width: 100%;
+    padding: 3em;
   }
 
   .partner {

@@ -11,12 +11,12 @@ article.introduction {
 .accordion-tabs {
   @include outer-container;
   .tab-content {
-    //@include span-columns(12);
     width: 100%;
+    padding: 3em;
   }
 
   .activity {
-    @include span-columns(10 of 12);
+    @include span-columns(12 of 12);
     @include clearfix;
     margin-top: em(20);
     margin-bottom: em(40);
