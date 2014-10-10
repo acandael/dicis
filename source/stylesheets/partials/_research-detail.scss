@@ -10,6 +10,10 @@ article.research-group {
     float: left;
     @include span-columns(8);
     margin-top: em(20);
+
+    ul {
+      @extend %default-ul;
+    }
   }
   aside {
     float: right;
