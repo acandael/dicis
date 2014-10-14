@@ -2,20 +2,25 @@ article.research-group {
   .breadcrumb {
     margin-bottom: em(40);
   }
+
+  ul {
+    @extend %default-ul;
+  }
+
   .practical {
     float: left;
+    @include span-columns(8 of 12);
+    margin-top: em(20);
   }
   .content {
-    clear: left;
     float: left;
-    @include span-columns(8);
+    @include span-columns(8 of 12);
     margin-top: em(20);
 
-    ul {
-      @extend %default-ul;
-    }
   }
   aside {
+    @include span-columns(4 of 12);
+    @include omega();
     float: right;
   }
 }
