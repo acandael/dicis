@@ -21,3 +21,6 @@ gem 'neat', '~> 1.6.0'
 
 # Install base styles for Bourbon and Neat
 gem 'bitters', '~> 0.10.1'
+
+gem 'middleman-search_engine_sitemap', '~> 1.1.0'
+
