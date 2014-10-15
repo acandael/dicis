@@ -9,8 +9,34 @@ article {
     float: left;
     @include span-columns(8);
     margin-top: em(20);
+    h2 {
+      margin-top: em(20);
+      margin-bottom: em(10);
+      font-size: $base-font-size * 1.6;
+      color: darken($base-accent-color, 20);
+    }
+    h3 {
+      font-size: $base-font-size * 1;
+    }
+
+    ol {
+      @extend %default-ol;
+    }
+    ul {
+      @extend %default-ul;
+    }
   }
   aside {
     float: right;
+  }
+
+  table.timetable {
+    overflow: hidden;
+    margin-top: em(40);
+    padding-top: em(20);
+    td.hour {
+      width: 20%;
+      vertical-align: top;
+    }
   }
 }

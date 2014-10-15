@@ -25,6 +25,15 @@ article.introduction {
     }
     h2 {
       font-size: $base-font-size * 1.2;
+      margin-bottom: em(10);
+      a {
+        color: darken($base-accent-color, 10);
+        border-bottom: 2px solid $base-accent-color;
+      }
+    }
+
+    p {
+      @include span-columns(8);
     }
   }
 }
