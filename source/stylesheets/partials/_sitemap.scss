@@ -1,4 +1,4 @@
-  ul {
+  ul.sitemap, ul.sitemap ul {
     @extend %default-ul;
     .sub {
       margin-top: em(20);
