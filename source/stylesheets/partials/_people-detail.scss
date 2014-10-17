@@ -10,17 +10,21 @@
 
 
     .content {
+      width: 100%;
       @include media($medium-screen) {
         @include span-columns(8);
         @include shift(-12);
+        margin-top: 0px;
       }
     }
 
 
     aside {
+      float: none;
       @include media($medium-screen) {
         @include span-columns(4);
         @include shift(8);
+        @include clearfix;
       }
       img {
         margin-bottom: em(20);
