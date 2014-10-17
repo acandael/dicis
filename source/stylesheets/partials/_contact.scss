@@ -9,5 +9,14 @@ article.contact {
 
   .content {
     margin-top: 0px;
+    margin-bottom: em(20);
+  }
+
+  aside {
+    display: block;
+    float: none;
+    @include media($medium-screen) {
+      float: right;
+    }
   }
 }
