@@ -1,6 +1,12 @@
-section {
+section.home {
   @include outer-container;
   margin-top: em(40);
+  margin-left: em(10);
+  margin-right: em(10);
+  @include media($medium-screen) {
+    margin-left: auto;
+    margin-right: auto;
+  }
   .hero {
     $hero-background-top: darken($base-accent-color, 25); 
     $hero-background-bottom: adjust-hue($hero-background-top, -70);
@@ -27,7 +33,10 @@ section {
     .hero-inner {
       @include outer-container;
       @include clearfix;
-      padding: 3em;
+      padding: 2em;
+      @include media($medium-screen) {
+        padding: 3em;
+      }
       padding-bottom: 1em;
       margin: auto;
       text-align: center;
@@ -40,7 +49,10 @@ section {
       }
 
       .hero-copy {
-        text-align: center;
+        text-align: left;
+        @include media($medium-screen) {
+          text-align: center;
+        }
 
         h1 {
           font-size: 1.6em;
@@ -71,11 +83,13 @@ section {
 
   .news {
     position: relative;
+    margin-top: em(40);
     background-color: white;
     box-shadow: 0 1px 4px 1px $light-gray;
     @include media($medium-screen) {
       @include span-columns(4);
       @include omega();
+      margin-top: 0px;
     }
 
     .news-inner {
