@@ -7,7 +7,9 @@ article {
   }
   .content {
     float: left;
-    @include span-columns(8);
+    @include media($medium-screen) {
+      @include span-columns(8);
+    }
     margin-top: em(20);
     h2 {
       margin-top: em(20);
@@ -28,6 +30,10 @@ article {
   }
   aside {
     float: right;
+    display: none;
+    @include media($medium-screen) {
+      display: block;
+    }
   }
 
   table.timetable {
