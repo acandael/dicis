@@ -3,6 +3,10 @@ article.research-group {
     margin-bottom: em(40);
   }
 
+  h1 {
+    font-size: $base-font-size * 1.3;
+  }
+
   ul {
     @extend %default-ul;
   }
