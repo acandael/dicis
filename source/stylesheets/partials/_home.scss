@@ -7,6 +7,10 @@ section.home {
     margin-left: auto;
     margin-right: auto;
   }
+
+  h2 {
+    color: darken($base-accent-color, 10);
+  }
   .hero {
     $hero-background-top: darken($base-accent-color, 25); 
     $hero-background-bottom: adjust-hue($hero-background-top, -70);
@@ -105,6 +109,11 @@ section.home {
       }
     }
 
+    a { 
+        font-weight: 800;
+        border-bottom: 2px solid darken($base-accent-color, 10);
+    }
+
     .all {
       text-align: right;
       margin-right: em(20);
@@ -147,6 +156,11 @@ section.home {
       }
       p {
         float: left;
+      }
+      
+      a {
+        font-weight: 800;
+        border-bottom: 2px solid darken($base-accent-color, 10);
       }
     }
   }

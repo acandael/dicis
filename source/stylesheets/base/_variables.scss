@@ -29,7 +29,7 @@ $base-font-color: $dark-gray;
 $base-accent-color: $light-brown;
 
 // Link Colors
-$base-link-color: $base-accent-color;
+$base-link-color: darken($base-accent-color, 10);
 $hover-link-color: darken($base-accent-color, 15);
 $base-button-color: $base-link-color;
 $hover-button-color: $hover-link-color;
