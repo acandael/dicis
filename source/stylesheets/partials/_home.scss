@@ -150,6 +150,9 @@ section.home {
       img {
         float: right;
         display: none;
+        padding: 3px;
+        border: 1px solid $medium-gray;
+
         @include media($portrait-screen) {
           display: block;
           margin-left: em(20);

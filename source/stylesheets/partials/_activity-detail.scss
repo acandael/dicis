@@ -37,6 +37,10 @@ article {
   aside {
     float: right;
     display: none;
+    img {
+      padding: 3px;
+      border: 1px solid $medium-gray;
+    }
     @include media($medium-screen) {
       display: block;
     }

@@ -28,6 +28,8 @@
       }
       img {
         margin-bottom: em(20);
+        padding: 3px;
+        border: 1px solid $medium-gray;
         @include media($medium-screen) {
           float: right;
         }
