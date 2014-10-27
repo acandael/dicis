@@ -20,10 +20,17 @@ article.people {
 
   .member {
     text-align: center;
+
+    @include media($portrait-screen) {
+      @include span-columns (4 of 8);
+      @include omega(2n);
+    }
+
     @include media($medium-screen) {
       @include span-columns (3 of 12);
       @include omega(4n);
     }
+
 
     background-color: white;
     padding: em(10);
