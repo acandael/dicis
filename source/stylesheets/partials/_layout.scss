@@ -9,6 +9,18 @@ html, body {
   height: 100%;
 }
 
+section {
+  @include outer-container;
+  padding-left: em(10);
+  padding-right: em(10);
+  margin-left: em(10);
+  margin-right: em(10);
+  @include media($medium-screen) {
+    margin-left: auto; 
+    margin-right: auto; 
+  }
+}
+
 .push {
   height: 5em;
   @include media($large-screen) {

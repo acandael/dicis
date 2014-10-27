@@ -11,7 +11,7 @@ article.introduction {
 .accordion-tabs {
   margin-left: em(20);
   margin-right: em(20);
-  @include media($medium-screen) {
+  @include media($large-screen) {
     @include outer-container;
   }
   .tab-content {
