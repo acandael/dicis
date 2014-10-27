@@ -132,6 +132,7 @@ section.home {
     padding: 2em;
     @include media($medium-screen) {
       padding: 3em; 
+      padding-top: 2em;
     }
     padding-top: 1.75em;
     background-color: white;
@@ -177,6 +178,7 @@ section.home {
     margin-top: em(40);
     background-color: white;
     box-shadow: 0 1px 4px 1px $light-gray;
+    padding-top: 2em;
     @include clearfix;
 
     @include media($medium-screen) {
@@ -187,7 +189,6 @@ section.home {
     h2 {
       text-align: center;
       margin-bottom: em(10);
-      padding-top: .75em;
     }
 
     .partner {
