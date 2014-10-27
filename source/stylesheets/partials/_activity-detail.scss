@@ -5,6 +5,12 @@ article {
   .practical {
     float: left;
   }
+
+  @include media($medium-screen) {
+    h1 {
+      font-size: $base-font-size * 1.6;
+    }
+  }
   .content {
     float: left;
     @include media($medium-screen) {
