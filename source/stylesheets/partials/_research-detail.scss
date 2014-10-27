@@ -29,6 +29,11 @@ article.research-group {
     @include omega();
     float: right;
     display: none;
+
+    @include media($portrait-screen) {
+      display: block;
+    }
+
     @include media($medium-screen) {
       display: block;
     }

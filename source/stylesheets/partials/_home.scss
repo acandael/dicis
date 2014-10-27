@@ -150,6 +150,11 @@ section.home {
       img {
         float: right;
         display: none;
+        @include media($portrait-screen) {
+          display: block;
+          margin-left: em(20);
+          margin-bottom: em(10);
+        }
         @include media($medium-screen) {
           display: block;
         }
@@ -169,6 +174,8 @@ section.home {
     margin-top: em(40);
     background-color: white;
     box-shadow: 0 1px 4px 1px $light-gray;
+    @include clearfix;
+
     @include media($medium-screen) {
       @include span-columns(4);
       @include omega();
@@ -184,6 +191,13 @@ section.home {
       padding: .75em 1em;
       padding-left: 2em;
       margin-bottom: em(40);
+
+      @include media($portrait-screen) {
+        @include span-columns(4 of 8);
+        @include omega(2n);
+      }
     }
+
+    
   }
 }

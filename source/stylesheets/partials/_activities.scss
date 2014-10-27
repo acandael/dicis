@@ -32,6 +32,12 @@ article.introduction {
     img {
       float: right;
       display: none;
+
+      @include media($portrait-screen) {
+        display: block;
+        margin-left: em(20);
+        margin-bottom: em(10);
+      }
       @include media($medium-screen) {
         display: block;
       }
