@@ -98,7 +98,9 @@ section.home {
 
     .news-inner {
       padding: .75em 1em;
-      padding-left: 2em;
+      @include media($medium-screen) {
+        padding-left: 2em;
+      }
       margin-bottom: em(40);
       h2 {
         text-align: center;
@@ -143,7 +145,7 @@ section.home {
 
   .activities {
     margin-top: em(40);
-    padding: 2em;
+    padding: 1em;
     @include media($medium-screen) {
       padding: 3em; 
       padding-top: 2em;
@@ -159,7 +161,9 @@ section.home {
       @include clearfix;
       margin-top: em(20);
       margin-bottom: em(20);
-      padding: 1em;
+      @include media($medium-screen) {
+        padding: 1em;
+      }
       padding-left: 0px;
       clear: both;
       img {
