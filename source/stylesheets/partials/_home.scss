@@ -37,7 +37,7 @@ section.home {
     .hero-inner {
       @include outer-container;
       @include clearfix;
-      padding: 2em;
+      padding: 1em;
       @include media($medium-screen) {
         padding: 3em;
       }
