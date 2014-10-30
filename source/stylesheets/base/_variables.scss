@@ -1,6 +1,6 @@
 // Typography
 $sans-serif: 'Roboto', $helvetica;
-$serif: 'Source Sans Pro', $georgia;
+$serif: 'Alegreya', $georgia;
 $base-font-family: $sans-serif;
 $header-font-family: $base-font-family;
 
@@ -26,10 +26,10 @@ $base-background-color: #eae5e0;
 
 // Font Colors
 $base-font-color: $dark-gray;
-$base-accent-color: $light-brown;
+$base-accent-color: darken($light-brown, 20);
 
 // Link Colors
-$base-link-color: darken($base-accent-color, 10);
+$base-link-color: $base-accent-color;
 $hover-link-color: darken($base-accent-color, 15);
 $base-button-color: $base-link-color;
 $hover-button-color: $hover-link-color;

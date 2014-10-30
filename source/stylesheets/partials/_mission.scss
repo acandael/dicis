@@ -2,11 +2,7 @@ article.mission {
   
   header {
     h1 {
-      margin-bottom: 0px;
-
-      @include media($medium-screen) {
-        text-align: left;
-      }
+      line-height: 1.1;
     }
   }
   h2 {
@@ -16,11 +12,18 @@ article.mission {
   }
 
     .content {
-      width: 100%;
+      max-width: 37.5rem;
       @include media($medium-screen) {
         @include span-columns(8 of 12);
-        padding-right: em(40);
+        margin-top: 0;
+        padding: 4.2em;
+        padding-left: 0px;
+        padding-top: 0px;
         float: left;
+      }
+
+      p {
+        margin: 0 0 1.6em;
       }
     }
     aside {
