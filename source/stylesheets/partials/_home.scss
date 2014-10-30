@@ -109,17 +109,19 @@ section.home {
       }
 
       p {
-        line-height: 1.5;
-        font-size: $base-font-size;
+        line-height: 1.6;
+        font-size: 1.25em;
 
         &.title {
           font-family: $sans-serif;
-          font-size: $base-font-size;
+          font-size: 1.25em;
         }
       }
       .date {
         font-style: italic;
+        @include media($medium-screen) {
         font-size: .8em;
+        }
       }
     }
 
@@ -217,7 +219,9 @@ section.home {
 
     .partner {
       padding: .75em 1em;
-      padding-left: 2em;
+      @include media($medium-screen) {
+        padding-left: 2em;
+      }
       margin-bottom: em(40);
 
       @include media($portrait-screen) {
