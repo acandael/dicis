@@ -163,9 +163,6 @@ section.home {
       @include clearfix;
       margin-top: em(20);
       margin-bottom: em(20);
-      @include media($medium-screen) {
-        padding: 1em;
-      }
       padding-left: 0px;
       clear: both;
       img {
@@ -231,7 +228,7 @@ section.home {
 
       p {
         font-family: $sans-serif;
-        font-size: $base-font-size;
+        font-size: 1.25em;
         line-height: 1.5;
       }
     }
