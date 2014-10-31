@@ -223,7 +223,7 @@ article {
   margin-right: em(20);
   margin-top: em(40);
   margin-bottom: em(40);
-  padding: 2em;
+  padding: 1em;
 
   @include media($medium-screen) {
     padding: 3em;

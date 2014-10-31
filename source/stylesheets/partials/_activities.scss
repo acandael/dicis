@@ -15,7 +15,7 @@ article.introduction {
     @include outer-container;
   }
   .tab-content {
-    padding: 2em;
+    padding: 1em;
     @include media($medium-screen) {
       padding: 3em;
     }
