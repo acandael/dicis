@@ -1,19 +1,45 @@
-article.news-item {
-
-  header {
-    margin-bottom: $base-line-height;
+section.news {
+  @include outer-container;
+  margin-top: em(40);
+  margin-left: em(10);
+  margin-right: em(10);
+  @include media($medium-screen) {
+    margin-left: auto;
+    margin-right: auto;
   }
 
-  h2 {
-    font-size: $base-font-size * 1.2;
-  }
-  footer {
-    float: left;
-    font-style: italic;
+  h1 {
+    @include media($medium-screen) {
+        font-size: 2.411em;
+        line-height: 1.1;
+    }
   }
 
-  .content {
-    float: left;
-    clear: left;
+  article.news-item {
+
+    margin-left: 0;
+    margin-right: 0;
+
+    header {
+      margin-bottom: 0;
+      h2 {
+        font-size: 1.25em;
+        margin-bottom: 0;
+        @include media($medium-screen) {
+          font-size: 1.953em;
+          line-height: 1.2;
+        }
+      }
+    }
+
+    footer {
+      float: left;
+      font-style: italic;
+    }
+
+    .content {
+      float: left;
+      clear: left;
+    }
   }
 }
