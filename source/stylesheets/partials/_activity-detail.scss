@@ -6,11 +6,14 @@ article {
     float: left;
   }
 
-  @include media($medium-screen) {
+  header {
+    margin-bottom: 0;
     h1 {
-      font-size: $base-font-size * 1.6;
+      margin-bottom: em(5);
     }
   }
+
+
   .content {
     float: left;
     @include media($medium-screen) {
