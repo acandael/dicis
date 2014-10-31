@@ -3,7 +3,7 @@ article.people {
   h1 {
     font-size: 2.411em;
     line-height: 1.1;
-    $include media($portrait-screen) {
+    @include media($portrait-screen) {
       text-align: center;
     }
   }
