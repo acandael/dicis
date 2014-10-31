@@ -17,7 +17,9 @@ article.research-group {
 
   .practical {
     float: left;
-    @include span-columns(8 of 12);
+    @include media($medium-screen) {
+      @include span-columns(8 of 12);
+    }
     p {
       font-size: $base-font-size;
       @include media($medium-screen) {
