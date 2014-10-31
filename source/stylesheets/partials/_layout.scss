@@ -37,6 +37,10 @@ p {
   line-height: 1.6;
 }
 
+h1, h2 {
+  font-family: $display;
+}
+
 // breadcrumbs
 
 .breadcrumb { 
@@ -44,7 +48,7 @@ p {
   $breadcrumb-border: 1px solid $breadcrumb-border-color;
   $breadcrumb-height: em(40);
   $breadcrumb-arrow-color: $breadcrumb-border-color;
-  $breadcrumb-background: white;
+  $breadcrumb-background: $white;
   $breadcrumb-inactive-hover-color: $breadcrumb-background;
   $breadcrumb-color: $medium-gray;
   $breadcrumb-color-hover: $base-accent-color;
@@ -62,6 +66,7 @@ p {
     line-height: $breadcrumb-height;
     margin-right: -5px;
     font-size: .8em;
+    font-family: $base-font-family;
     padding: 0 $breadcrumb-height/4 0 $breadcrumb-height/2;
     position: relative;
     text-decoration: none;

@@ -1,6 +1,7 @@
 // Typography
-$sans-serif: 'Pathway Gothic One', Impact, sans-serif;
+$sans-serif: 'Roboto', $helvetica;
 $serif: 'Alegreya', $georgia;
+$display: 'Pathway Gothic One', Impact, sans-serif;
 $base-font-family: $sans-serif;
 $header-font-family: $base-font-family;
 
@@ -12,6 +13,7 @@ $header-line-height: $base-font-size * 1.25;
 $base-border-radius: em(3);
 
 // Colors
+$white: #f9f9f9;
 $blue: #477DCA;
 $dark-gray: #333;
 $medium-gray: #999;
