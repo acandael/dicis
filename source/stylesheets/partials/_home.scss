@@ -118,9 +118,7 @@ section.home {
       }
       .date {
         font-style: italic;
-        @include media($medium-screen) {
         font-size: .8em;
-        }
       }
     }
 
