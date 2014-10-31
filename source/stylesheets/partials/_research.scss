@@ -48,7 +48,7 @@ article.introduction {
       margin-bottom: em(10);
       a {
         color: darken($base-accent-color, 10);
-        border-bottom: 2px solid $base-accent-color;
+        border-bottom: 2px dotted lighten($base-accent-color, 20);
       }
     }
 
