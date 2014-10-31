@@ -1,10 +1,15 @@
 article.contact {
+  h1 {
+    text-align: left;
+    font-size: $base-font-size * 2.25;
+    margin-bottom: 0px;
+    @include media($medium-screen) {
+      font-size: 2.411em;
+      line-height: 1.1;
+    }
+  }
   header {
     margin-bottom: $base-line-height;
-
-    h1 {
-      margin-bottom: 0px;
-    }
   }
 
   .content {
