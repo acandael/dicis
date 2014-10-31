@@ -17,6 +17,7 @@ article.research-group {
 
   .practical {
     float: left;
+    margin-bottom: 1.25em;
     @include media($medium-screen) {
       @include span-columns(8 of 12);
     }
