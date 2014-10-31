@@ -18,6 +18,12 @@
         margin-top: 0px;
       }
 
+      @include media($portrait-screen) {
+        @include span-columns(6);
+        @include shift(-8);
+        margin-top: 0px;
+      }
+
       p {
         margin: 0 0 1.6em;
       }
@@ -40,11 +46,19 @@
         @include shift(8);
         @include clearfix;
       }
+      @include media($portrait-screen) {
+        @include span-columns(2);
+        @include shift(6);
+        @include clearfix;
+      }
       img {
         margin-bottom: em(20);
         padding: 3px;
         border: 1px solid $medium-gray;
         @include media($medium-screen) {
+          float: right;
+        }
+        @include media($portrait-screen) {
           float: right;
         }
       }
