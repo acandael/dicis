@@ -1,8 +1,17 @@
 article {
+
+  a { 
+    font-weight: 600;
+    border-bottom: 2px dotted $base-accent-color;
+  }
   .breadcrumb {
     margin-bottom: em(40);
   }
   .practical {
+  }
+
+  .tagline {
+    font-weight: 800;
   }
 
   header {
@@ -28,6 +37,7 @@ article {
     h3 {
       font-size: $base-font-size * 1;
     }
+
 
     ol {
       @extend %default-ol;
