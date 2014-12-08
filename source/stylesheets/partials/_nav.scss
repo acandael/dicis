@@ -116,6 +116,7 @@ header.navigation {
       color: $navigation-color;
       display: inline-block;
       font-weight: 400;
+      font-size: 21px;
 
       @include media ($horizontal-bar-mode) {
         padding-right: 1em;
