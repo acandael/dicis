@@ -1,0 +1,10 @@
+<div class="activity">
+  <% if activity["image"].present? %>
+    <%= image_tag activity["image"] %>
+  <% end %>
+  <h2><%= link_to activity["title"], activity["url"] %></h2>
+  <p class="date"><%= activity["date"] %></p>
+  <% if activity["description"].present? %>
+    <p><%= activity["description"] %></p>
+  <% end %>
+</div>

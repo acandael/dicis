@@ -13,50 +13,17 @@ description: "DICIS will be organizing topical open access seminars on particula
   <li class="tab-header-and-content">
     <a href="#" class="is-active tab-link">Forthcoming Activities</a>
     <div class="tab-content">
-      <div class="activity">
-        <%= image_tag "workshop-data-extraction-small.png" %>
-        <h2><a href="/workshop-data-extraction-and-visualization-of-historical-sources.html">From Text Interpretation to Data to Network: a Two Part Workshop on Data Extraction and Visualization of Historical Sources.</a></h2>
-        <p class="date">17-18 March 2016</p>
-        <p>This workshop is a closed DICIS event and will give DICIS members the chance to work with their own datasets (on historical sources, data, …) with the digital tools provided, explained and applied.</p>
-      </div>
+      <% data.current_activities.each do |activity| %>
+        <%= partial "activity", locals: { activity: activity } %>
+      <% end %>
     </div>
   </li>
   <li class="tab-header-and-content">
     <a href="#" class="tab-link">Past Activities</a>
     <div class="tab-content">
-      <div class="activity">
-        <img src="/images/turning-the-page-conference.jpg" alt="logo digital fandom conference" />
-        <h2><a href="/turning-the-page-conference.html">Turning The Page Conference</a></h2>
-        <p class="date">12-13 November, Ghent University</p>
-        <p>Digitalization, Fan Magazines and Historical Audiences Studies’ Conference</p>
-        <p>Conference on movie magazines and the influence of digitalization.</p>
-      </div>
-      <div class="activity">
-        <%= image_tag "homer-conference-glasgow-2015-150x191.jpg" %>
-        <h2><a href="/workshop-datalinkage-sharing.html">Workshop Data Linkage &amp; Sharing</a></h2>
-        <p class="date"><time datetime="2015-06-22">June 2015</time>, University of Glasgow</p>
-        <p>DICIS is organizing a workshop at the Fifth HoMER Conference.</p>
-      </div>
-      <div class="activity">
-        <h2><a href="/international-comparative-study-on-cinema-spaces.html">An international comparative study on cinema spaces, film programming and cinema-going experiences in Belgium and Mexico</a></h2>
-        <p class="date">23-27 March 2015, University of Antwerp</p>
-        <p>5-day workshop on film exhibition, film programming and cinemagoing at the University of Antwerp</p>
-      </div>
-      <div class="activity">
-        <%= image_tag "digital-cinema-history-workshop-150x115.jpg" %>
-        <h2><a href="/how-can-digital-history-cinema-matter-more-workshop.html">How can digital cinema history matter more? Workshop</a></h2>
-        <p class="date"><time datetime="2015-06-27">27 June 2014</time>, Glasgow School of Art's Digital Design Studio</p>
-      </div>
-      <div class="activity">
-        <%= image_tag "homer-150x134.jpg" %>
-        <h2><a href="/comparative-approaches-to-moviegoing-exhibition-and-reception-workshop.html">Comparative Approaches to moviegoing, Exhibition and Reception’ Workshop</a></h2>
-        <p class="date"><time datetime="2014-06-19">19 June 2014</time>, Catholic University of Milan</p>
-      </div>
-      <div class="activity">
-        <%= image_tag "logo-dicis-150x44.jpg" %>
-        <h2><a href="/launch-and-board-meeting-dicis.html">Launch & Board meeting DICIS</a></h2>
-        <p class="date"><time datetime="2014-06-2014">18 June 2014</time>, Catholic University of Milan</p>
-      </div>
+      <% data.past_activities.each do |activity| %>
+        <%= partial "activity", locals: { activity: activity } %>
+      <% end %>
     </div>
   </li>
 </ul>
