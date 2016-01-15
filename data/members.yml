@@ -12,7 +12,7 @@
 
 - name: "Philippe Meers"
   page: "#"
-  image: "no-image-placeholder.jpg"
+  image: "philippe-meers.jpg"
   affiliation: "Visual and Digital Cultures Research Center"
   url: "visual-and-digital-cultures-research-center.html"
 
@@ -43,7 +43,7 @@
 - name: "Robert C. Allen"
   page: "#"
   image: "no-image-placeholder.jpg"
-  affilation: "Digital Innovation Lab"
+  affiliation: "Digital Innovation Lab"
   url: "digital-innovation-lab.html"
 
 - name: "Richard Maltby"
