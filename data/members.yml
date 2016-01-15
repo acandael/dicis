@@ -34,6 +34,12 @@
   affiliation: "Utrecht Media History Group"
   url: "utrecht-media-history-group.html"
 
+- name: "Judith Thissen"
+  page: "#"
+  image: "judith-thissen.jpg"
+  affiliation: "Utrecht Media History Group"
+  url: "utrecht-media-history-group.html"
+
 - name: "Robert C. Allen"
   page: "#"
   image: "no-image-placeholder.jpg"
@@ -47,15 +53,15 @@
   url: "flinders-institute-for-research-in-the-humanities.html"
 
 - name: "Deb Verhoeven"
-  page: "deb-verhoeven.html"
-  image: "deb-verhoeven.jpg"
-  affiliation: "Kinomatics: the industrial geometry of motion pictures"
-  url: "kinomatics-the-industrial-geometry-of-motion-pictures.html"
-
-- name: "Daniela Treveri Gennari"
   page: "daniela-treveri-gennari.html"
   image: "daniela-treveri-gennari.jpg"
   affiliation: "Film Studies Research Unit"
+  url: "film-studies-research-unit.html"
+
+- name: "Pierluigi Ercole"
+  page: "pierluigi-ercole.html"
+  image: "pierluigi-ercole.jpg"
+  affiliation: "Cinema and Television History Research Centre"
   url: "film-studies-research-unit.html"
 
 - name: "Pavel Skopal"
