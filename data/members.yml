@@ -53,6 +53,12 @@
   url: "flinders-institute-for-research-in-the-humanities.html"
 
 - name: "Deb Verhoeven"
+  page: "deb-verhoeven.html"
+  image: "deb-verhoeven.jpg"
+  affiliation: "Kinomatics: the industrial geometry of motion pictures"
+  url: "kinomatics-the-industrial-geometry-of-motion-pictures.html"
+
+- name: "Daniela Treveri Gennari"
   page: "daniela-treveri-gennari.html"
   image: "daniela-treveri-gennari.jpg"
   affiliation: "Film Studies Research Unit"
