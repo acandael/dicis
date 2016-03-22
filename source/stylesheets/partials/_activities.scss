@@ -33,6 +33,7 @@ article.introduction {
     @include clearfix;
     @include media($medium-screen) {
       @include span-columns(12 of 12);
+      min-width: 1000px;
     }
     margin-top: em(20);
     margin-bottom: em(40);
