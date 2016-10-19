@@ -13,8 +13,14 @@ description: "DICIS will be organizing topical open access seminars on particula
   <li class="tab-header-and-content">
     <a href="#" class="is-active tab-link">Forthcoming Activities</a>
     <div class="tab-content">
-        <% data.current_activities.each do |activity| %>
-          <%= partial "activity", locals: { activity: activity } %>
+        <% if data.current_activities %>
+          <% data.current_activities.each do |activity| %>
+            <%= partial "activity", locals: { activity: activity } %>
+          <% end %>
+        <% else %>
+          <div class="activity">
+          <p>No current activities</p>
+          </div>
         <% end %>
     </div>
   </li>
