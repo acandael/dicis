@@ -23,21 +23,15 @@ description: "Digital Cinema Studies is a scientific research network funded by 
   </div>
   <div data-mh="row2" class="activities">
     <h2>Activities</h2>
-    <div class="activity">
-        <h2><a href="/john-sedgwick-on-comparative-film-programming-analysis.html">Workshop Methods (7): John Sedgwick on comparative film programming analysis</a></h2>
-        <p class="date"><time datetime="2016-06-1">1 June 9.30 a.m - 5 p.m</time>, Ghent, Korte Meer 11, V2</p>
-        <p>One-day workshop by Prof. John Sedgwick (U of Portsmouth), one of the leading historical film economists, on doing film programming analysis from a comparative perspective.</p>
-    </div>
-    <div class="activity">
-        <h2><a href="/jef-klenotic-on-space-and-place-in-communication-and-media-history.html">Public Lecture (2) Jeff Klenotic on space and place in communication and media-history</a></h2>
-        <p class="date"><time datetime="2017-03-14">14 March 2017, 10-12 am</time>, Ghent</p>
-        <p>This talk will focus upon how digital methods might alter/inform our historical understanding of communication technologies</p>
-    </div>
-    <div class="activity">
-        <h2><a href="/jef-klenotic-on-gis-and-cinema-studies.html">Workshop Methods (6): Jeff Klenotic on GIS and cinema studies</a></h2>
-        <p class="date"><time datetime="2016-10-10">15 March 9.30 a.m - 5 p.m</time>, Ghent, Korte Meer 11, V1</p>
-        <p>One-day workshop by Prof. Jeff Klenotic (U of New Hampshire) on the use of GIS for cinema and film studies</p>
-    </div>
+    <% if data.current_activities %>
+      <% data.current_activities.take(3).each do |activity| %>
+        <div class="activity">
+          <h2><%= link_to activity["title"], activity["url"] %></h2>
+          <p class="date"><%= activity["date"] %><%= ", " if activity["location"] %><%= activity["location"] %></p>
+          <p><%= activity["description"] %></p>
+        </div>
+      <% end %>
+    <% end %>
   </div>
   <div data-mh="row2" class="partners">
     <h2>Partners</h2>

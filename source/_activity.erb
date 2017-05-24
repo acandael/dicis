@@ -3,7 +3,7 @@
     <%= image_tag activity["image"] %>
   <% end %>
   <h2><%= link_to activity["title"], activity["url"] %></h2>
-  <p class="date"><%= activity["date"] %></p>
+  <p class="date"><%= activity["date"] %><%= ", " if activity["location"] %><%= activity["location"] %></p>
   <% if activity["description"].present? %>
     <p><%= activity["description"] %></p>
   <% end %>
